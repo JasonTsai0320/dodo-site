@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dodo 渡簬企業 | 企業機能服 - Do good, do right.</title>
+    <!-- 使用 Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 使用 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 使用 Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        .tech-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .partner-grid div { filter: grayscale(100%); opacity: 0.6; transition: all 0.3s ease; }
+        .partner-grid div:hover { filter: grayscale(0%); opacity: 1; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 text-white">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="text-3xl font-black tracking-tighter">dodo</div>
+                <span class="text-[10px] uppercase tracking-widest hidden md:block opacity-70">- Functional Outerwear -</span>
+            </div>
+            <div class="hidden md:flex gap-8 items-center text-sm font-bold">
+                <a href="#tech" class="hover:text-blue-400 transition-colors">核心技術</a>
+                <a href="#esg" class="hover:text-blue-400 transition-colors">ESG 永續</a>
+                <a href="#products" class="hover:text-blue-400 transition-colors">產品系列</a>
+                <a href="#partners" class="hover:text-blue-400 transition-colors">合作夥伴</a>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 shadow-lg shadow-blue-900/20">聯繫顧問</button>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (PDF Page 1) -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 opacity-70">
+            <!--  -->
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=2000" alt="Outdoor Hero" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-transparent to-slate-900"></div>
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h2 class="text-blue-400 font-bold tracking-widest uppercase mb-4 animate-pulse">Do good, do right.</h2>
+            <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">讓企業精神與 <br><span class="text-blue-400 italic">ESG</span> 齊頭並進</h1>
+            <p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed">兼具機能、舒適度與永續價值的品牌。挺拔舒適，穿出向上競爭力。</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="bg-blue-600 text-white px-10 py-4 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-2xl">立即定制方案</button>
+                <button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20">品牌永續願景</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Panel (PDF Page 2) -->
+    <section class="py-16 bg-white relative z-10 -mt-10 rounded-t-[3rem] mx-4 md:mx-10 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div class="space-y-2">
+                <div class="text-5xl font-black text-blue-900">30+</div>
+                <div class="text-slate-500 font-bold">台灣頂尖防水機能經驗</div>
+            </div>
+            <div class="space-y-2 border-y md:border-y-0 md:border-x border-slate-100 py-8 md:py-0">
+                <div class="text-5xl font-black text-blue-900">MIT</div>
+                <div class="text-slate-500 font-bold">在地研發加工與製造鏈</div>
+            </div>
+            <div class="space-y-2">
+                <div class="text-5xl font-black text-blue-900">100%</div>
+                <div class="text-slate-500 font-bold">JIS / ISO 國際規格符合</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Technology (PDF Page 3) -->
+    <section id="tech" class="py-24 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <div class="flex-1">
+                    <span class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-black uppercase tracking-widest mb-6">Patent Tech</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight mb-8">獨家防水透濕專利<br>濕式微多孔技術</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-10">由蔡秋雄先生研發專利塗佈技術。孔徑小於水滴、大於水蒸氣，能有效阻擋風雨，同時順利排出汗氣，解決悶熱黏身的痛點。</p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="droplets" class="text-blue-600"></i>
+                            <span class="font-bold">防水、防潑水</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="wind" class="text-blue-600"></i>
+                            <span class="font-bold">強效防風保暖</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="thermometer" class="text-blue-600"></i>
+                            <span class="font-bold">吸濕快乾透氣</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="shield" class="text-blue-600"></i>
+                            <span class="font-bold">抗菌且耐磨測試</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 w-full">
+                    <div class="gradient-bg rounded-[3rem] p-10 text-white shadow-3xl relative">
+                        <div class="flex justify-between items-center mb-10">
+                            <div>
+                                <h4 class="text-xl font-black">專利原理圖解</h4>
+                                <p class="text-slate-400 text-xs">Microporous Membrane</p>
+                            </div>
+                            <span class="bg-amber-400 text-slate-900 text-[10px] font-black px-3 py-1 rounded-full">PATENTED</span>
+                        </div>
+                        <!--  -->
+                        <div class="aspect-video bg-slate-800/50 rounded-2xl border border-slate-700 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 flex flex-col justify-around p-8">
+                                <div class="flex justify-between text-blue-400 opacity-50"><i data-lucide="cloud-rain"></i><i data-lucide="cloud-rain"></i><i data-lucide="cloud-rain"></i></div>
+                                <div class="h-2 w-full bg-slate-600 rounded-full"></div>
+                                <div class="flex justify-center text-amber-200 animate-pulse"><i data-lucide="wind"></i><span class="ml-2 text-xs font-bold">汗氣順利排出</span></div>
+                            </div>
+                            <p class="text-[10px] text-slate-500 uppercase font-bold absolute bottom-4">Technical Diagram Placeholder</p>
+                        </div>
+                        <div class="mt-10 flex justify-between items-center">
+                            <div class="text-center"><p class="text-[10px] text-slate-500 mb-1">環保認證</p><p class="text-xs font-bold">bluesign®</p></div>
+                            <div class="text-center border-x border-slate-700 px-6"><p class="text-[10px] text-slate-500 mb-1">安全認證</p><p class="text-xs font-bold">OEKO-TEX®</p></div>
+                            <div class="text-center"><p class="text-[10px] text-slate-500 mb-1">質量認證</p><p class="text-xs font-bold">ISO 9001</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESG Section (PDF Page 4) -->
+    <section id="esg" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-black text-slate-900 mb-6">ESG 永續經營與實踐</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto text-lg mb-16 italic">「耐用，是從根源開始的環保；對土地最大的愛，就是不浪費。」</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-10 bg-slate-50 rounded-[2rem] tech-card border border-slate-100">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6"><i data-lucide="leaf"></i></div>
+                    <h3 class="font-bold text-xl mb-4">綠色環保製程</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">DMF 溶劑 100% 回收，採用無溶劑貼合技術，減少能源消耗。</p>
+                </div>
+                <div class="p-10 bg-slate-50 rounded-[2rem] tech-card border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6"><i data-lucide="shield-check"></i></div>
+                    <h3 class="font-bold text-xl mb-4">耐用高機能</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">提供高品質耐穿服裝，延長壽命，一件抵三件，杜絕浪費。</p>
+                </div>
+                <div class="p-10 bg-slate-50 rounded-[2rem] tech-card border border-slate-100">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6"><i data-lucide="recycle"></i></div>
+                    <h3 class="font-bold text-xl mb-4">回收再生燃料</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">舊衣回收處理轉化為再生燃料棒 (SRF) 替代煤炭，落實循環。</p>
+                </div>
+                <div class="p-10 bg-slate-50 rounded-[2rem] tech-card border border-slate-100">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mx-auto mb-6"><i data-lucide="package"></i></div>
+                    <h3 class="font-bold text-xl mb-4">可分解包裝</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">選用 100% 可生物分解包裝袋，數月後回歸大地，無負擔。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products (PDF Page 5 & 6) -->
+    <section id="products" class="py-24 px-6 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-4">專業產品系列</h2>
+                <p class="text-slate-400">專為現代專業團隊設計，提升企業形象與舒適度。</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Flight Jacket -->
+                <div class="bg-slate-800/50 rounded-[2.5rem] overflow-hidden border border-slate-700 group">
+                    <div class="h-96 relative overflow-hidden">
+                        <!--  -->
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=1200" alt="Jacket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-6 left-6"><span class="bg-blue-600 px-4 py-1 rounded-full text-xs font-black uppercase">Core Product</span></div>
+                    </div>
+                    <div class="p-10">
+                        <h3 class="text-3xl font-black mb-6">高階機能飛行外套</h3>
+                        <div class="grid grid-cols-2 gap-4 mb-8 text-sm text-slate-300">
+                            <p>✓ 挺拔 3D 立體剪裁</p>
+                            <p>✓ 防風防潑水面料</p>
+                            <p>✓ 輕量化減負設計</p>
+                            <p>✓ YKK 優質拉鍊</p>
+                        </div>
+                        <button class="w-full bg-white text-slate-900 py-4 rounded-2xl font-black hover:bg-blue-50 transition-colors">獲取企業報價</button>
+                    </div>
+                </div>
+                <!-- Polo Shirt -->
+                <div class="bg-slate-800/50 rounded-[2.5rem] overflow-hidden border border-slate-700 group">
+                    <div class="h-96 relative overflow-hidden">
+                        <!--  -->
+                        <img src="https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&q=80&w=1200" alt="Polo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-6 left-6"><span class="bg-amber-500 px-4 py-1 rounded-full text-xs font-black uppercase">Business Elite</span></div>
+                    </div>
+                    <div class="p-10">
+                        <h3 class="text-3xl font-black mb-6">商務襯衫式 POLO 衫</h3>
+                        <div class="grid grid-cols-2 gap-4 mb-8 text-sm text-slate-300">
+                            <p>✓ 特殊襯衫式立領</p>
+                            <p>✓ 吸濕排汗抗 UV</p>
+                            <p>✓ 抗皺易打理洗後不變形</p>
+                            <p>✓ 親膚柔軟處理</p>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-4 rounded-2xl font-black hover:bg-blue-500 transition-colors">申請樣品試穿</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners (PDF Page 10) -->
+    <section id="partners" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-black text-slate-900 mb-6">深獲指標性企業與政府單位肯定</h2>
+            <p class="text-slate-500 mb-16">dodo 長期深耕 B2B 領域，品質深受各界專業信賴</p>
+            <div class="partner-grid grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-12 items-center">
+                <!-- 合作夥伴文字佔位符，實際可替換成 Logo 圖片 -->
+                <div class="font-black text-slate-400 text-sm">中華民國總統府</div>
+                <div class="font-black text-slate-400 text-sm">行政院</div>
+                <div class="font-black text-slate-400 text-sm">聯華電子</div>
+                <div class="font-black text-slate-400 text-sm">台灣高鐵</div>
+                <div class="font-black text-slate-400 text-sm">嘉里大榮</div>
+                <div class="font-black text-slate-400 text-sm">中華電信</div>
+                <div class="font-black text-slate-400 text-sm">長榮航勤</div>
+                <div class="font-black text-slate-400 text-sm">南僑集團</div>
+                <div class="font-black text-slate-400 text-sm">台灣電力公司</div>
+                <div class="font-black text-slate-400 text-sm">思科系統</div>
+                <div class="font-black text-slate-400 text-sm">中華航空</div>
+                <div class="font-black text-slate-400 text-sm">樂天桃猿</div>
+            </div>
+            <div class="mt-20 p-12 bg-slate-50 rounded-[3rem] border border-slate-100">
+                <h3 class="text-2xl font-black mb-4">「一件抵三件」的耐用哲學</h3>
+                <p class="text-slate-600 max-w-2xl mx-auto">無論是特殊環境防護或城市外勤，我們皆能為企業開發專屬方案，優化庫存管理，避免預算浪費。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-24 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-slate-800 pb-16 mb-12">
+            <div class="space-y-6">
+                <div class="text-4xl font-black text-white tracking-tighter">dodo</div>
+                <p class="text-sm leading-relaxed">源自守護，共生未來。渡渡鳥與渡渡樹曾是依存夥伴，我們矢志將這份遺憾轉化為守護人與大地的力量。</p>
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 cursor-pointer transition-colors text-white font-black text-xs">FB</div>
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 cursor-pointer transition-colors text-white font-black text-xs">IG</div>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">快速連結</h4>
+                <ul class="space-y-4 text-sm font-medium">
+                    <li><a href="#tech" class="hover:text-blue-400">專利技術</a></li>
+                    <li><a href="#esg" class="hover:text-blue-400">永續經營</a></li>
+                    <li><a href="#products" class="hover:text-blue-400">產品目錄</a></li>
+                    <li><a href="#" class="hover:text-blue-400">訂製流程</a></li>
+                </ul>
+            </div>
+            <div class="lg:col-span-2">
+                <h4 class="text-white font-bold mb-6">聯繫專屬顧問</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="phone" class="text-blue-500 w-5 h-5"></i>
+                        <div class="text-sm"><p class="text-white font-bold">客服專線</p>(03) 287-3966 #38</div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="mail" class="text-blue-500 w-5 h-5"></i>
+                        <div class="text-sm"><p class="text-white font-bold">Email</p>web.gtex@gmail.com</div>
+                    </div>
+                    <div class="flex items-start gap-3 md:col-span-2">
+                        <i data-lucide="map-pin" class="text-blue-500 w-5 h-5"></i>
+                        <div class="text-sm"><p class="text-white font-bold">地址</p>桃園市中壢區高鐵站前西路一段 286 號 15 樓之 9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-widest opacity-40">
+            <p>© 2024 dodo 渡簬企業有限公司. All Rights Reserved.</p>
+            <div class="flex gap-8 mt-4 md:mt-0">
+                <span>Privacy Policy</span>
+                <span>Terms of Service</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Sticky CTA (Mobile) -->
+    <div class="md:hidden fixed bottom-6 left-6 right-6 z-40">
+        <button class="w-full bg-blue-600 text-white py-4 rounded-full font-black shadow-2xl flex items-center justify-center gap-2">
+            諮詢專屬顧問 <i data-lucide="chevron-right"></i>
+        </button>
+    </div>
+
+    <script>
+        // 初始化圖標
+        lucide.createIcons();
+
+        // 導覽列滾動效果
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white', 'shadow-xl', 'text-slate-900', 'py-3');
+                nav.classList.remove('text-white', 'py-4');
+            } else {
+                nav.classList.remove('bg-white', 'shadow-xl', 'text-slate-900', 'py-3');
+                nav.classList.add('text-white', 'py-4');
+            }
+        });
+    </script>
+</body>
+</html>
